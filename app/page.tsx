@@ -18,7 +18,7 @@ export default function Home() {
             <div className="flex flex-col items-center sm:items-start">
               <Ticker
                 multiplier={3}
-                text="Não seja de esquerda. Não seja de direita. Esses dois conceitos estão deturpados no Brasil. Cobre políticos. Não aceite ser exploração do governo."
+                text="Não seja de direita ou esquerda: Esses dois conceitos estão deturpados no Brasil. Cobre e questione políticos. Não aceite exploração do governo."
               />
             </div>
           </aside>
