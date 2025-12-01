@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -70,7 +70,13 @@ export const metadata: Metadata = {
     apple: [{ url: "/brasaooficialcolorido.png" }],
   },
   manifest: "/site.webmanifest",
-  themeColor: [{ media: "(prefers-color-scheme: light)", color: "#0a0a0a" }, { media: "(prefers-color-scheme: dark)", color: "#000000" }],
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#0a0a0a" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
 };
 
 export default function RootLayout({
@@ -91,7 +97,6 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
