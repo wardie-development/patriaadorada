@@ -7,13 +7,12 @@ export type TickerProps = {
   text: string;
 }
 
-const logoSize = 60;
+const logoSize = 30;
 
 
 export const Ticker = ({ multiplier, text }: TickerProps) => (
   <div className="ticker">
     <div className="ticker__track">
-      {/* Group A: conteúdo visível */}
       <div className="ticker__group">
         {new Array(multiplier).fill(null).map((_, i) => (
           <p className="ticker__text text-lg leading-8 text-zinc-600 dark:text-zinc-400" key={`a-${i}`}>
